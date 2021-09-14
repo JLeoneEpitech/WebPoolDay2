@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<meta charset="utf-8">
+			<title>CodingPedia</title>
+			<link rel="stylesheet" type="text/css" href="CodingPedia.css">
+	</head>
+<body>
+	<header class="box">
+		<h1>Bienvenue sur CodingPedia PHP</h1>
+		<nav class="box">
+		<a href="index.html">Index</a>
+		<a href="php.html">PHP</a>
+		<a href="sql.html">SQL</a>
+				</nav>
+
+	</header>
+
+	<main class="main">	
+		<article>
+			<section>
+				<p><abbr title="PHP">PHP</abbr>: Hypertext Preprocessor23, plus connu sous son sigle PHP (sigle auto-référentiel), est un langage de programmation libre24, principalement utilisé pour produire des pages Web dynamiques via un serveur HTTP23, mais pouvant également fonctionner comme n'importe quel langage interprété de façon locale. PHP est un langage impératif orienté objet.</p></section>
+
+		</article>
+
+		<article>
+			<section>
+			<table>
+					<h3>Course Planning<h3>
+					<tr>
+						<th>Subject</th>
+						<th>Description</th>
+						<th>Grade obtained</th>
+					</tr>
+					<tr>
+						<td>PHP 101</td>
+						<td>Introduction to the language and syntax</td>
+						<td>15</td>
+					</tr>
+					<tr>
+						<td>OOP in PHP</td>
+						<td>How to do Object-Oriented Programming in PHP</td>
+						<td>-</td>
+					</tr>
+				</table>
+			</section>
+		</article>
+
+		<article>
+		<section>
+			<p>PHP is a really interesting language that allow many features like make simpler the communication between a web page and a Apache server for exemple.</p>
+		</section>	
+
+		</article>
+
+		<article>
+			<section>
+				<p>This is a example of some PHP code that work with AJAX(Asynchronous Javascript And XML), who can communicate with the server while the user is on the page for increase the interactivity of the web site</p>
+				<p>SCRIPT</p>
+				<pre>
+					function showHint(str) {<br>
+					  if (str.length == 0) {<br>
+					    document.getElementById("txtHint").innerHTML = "";<br>
+					    return;<br>
+					  } else {<br>
+					    var xmlhttp = new XMLHttpRequest();<br>
+					    xmlhttp.onreadystatechange = function() {<br>
+					      if (this.readyState == 4 && this.status == 200) {<br>
+					        document.getElementById("txtHint").innerHTML = this.responseText;<br>
+					      }<br>
+					    };<br>
+					    xmlhttp.open("GET", "gethint.php?q=" + str, true);<br>
+					    xmlhttp.send();<br>
+					  }
+					}
+				</pre>
+
+			</section>
+		</article>
+
+		<aside>
+			<q>	Peace is a lie, there is only passion.<br>
+				Through passion, I gain strength.<br>
+				Through strength, I gain power.<br>
+				Through power, I gain victory.<br>
+				Through victory, my chains are broken.<br>
+				The Force shall free me
+			</q>
+				<p style="nom">Sith Code</p>
+			
+		</aside>
+
+
+
+	</main>
+		
+	<footer class="box">
+		<address>
+			<p>Leone</p>
+			<p>Jonathan</p>
+			<a href="mailto:jonathan.leone@epitech.eu">Jonathan.leone@epitech.eu</a></br>
+			<a href="tel:+33770310780">Appelez moi</a>
+			<h5>Coût d'un appel appel local +0.3c/min</h5>
+		</address>	
+
+	</footer>
+</body>
+
+</html>
